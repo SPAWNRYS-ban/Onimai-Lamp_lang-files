@@ -1,0 +1,83 @@
+#Для безопасности оставлен только раздел Strings
+
+  strings:
+    reload: "{PRFX} &aReloaded successfully!"
+    error-occurred: "{PRFX} &cAn internal error has occurred!"
+    database-error-kick: "{PRFX} &cA database error has occurred!"
+    not-player: "{PRFX} &cСonsole is not allowed to execute this command!"
+    not-registered: "{PRFX} &cYou are not registered or your account is &6PREMIUM!"
+    cracked-command: "{PRFX}{NL}&aYou can not use this command since your account is &6PREMIUM&a!"
+    wrong-password: "{PRFX} &cPassword is wrong!"
+    nickname-invalid-kick: "{PRFX}{NL}&cYour nickname contains forbidden characters. Please, change your nickname!"
+    reconnect-kick: "{PRFX}{NL}&cReconnect to the server to verify your account!"
+    # 6 hours by default in ip-limit-valid-time
+    ip-limit-kick: "{PRFX}{NL}{NL}&cYour IP has reached max registered accounts. If this is an error, restart your router, or wait about 6 hours."
+    wrong-nickname-case-kick: "{PRFX}{NL}&cYou should join using username &6{0}&c, not &6{1}&c."
+    bossbar: "{PRFX} You have &6{0} &fseconds left to log in."
+    times-up: "{PRFX}{NL}&cAuthorization time is up."
+    login-premium: "{PRFX} You've been logged in automatically using the premium account!" # Can be empty.
+    login-premium-title: "ৰ" # Can be empty.
+    login-premium-subtitle: "" # Can be empty.
+    login-floodgate: "{PRFX} You've been logged in automatically using the bedrock account!" # Can be empty.
+    login-floodgate-title: "{PRFX} Welcome!" # Can be empty.
+    login-floodgate-subtitle: "&aYou has been logged in as bedrock player!" # Can be empty.
+    login: "{PRFX} &aPlease, login using &6/login <password>&a, you have &6{0} &aattempts."
+    login-wrong-password: "{PRFX} &cYou''ve entered the wrong password, you have &6{0} &cattempts left."
+    login-wrong-password-kick: "{PRFX}{NL}&cYou've entered the wrong password numerous times!"
+    login-successful: "{PRFX} &aSuccessfully logged in!"
+    login-title: "&fPlease, login using &6/login <password>&a." # Can be empty.
+    login-subtitle: "&aYou have &6{0} &aattempts." # Can be empty.
+    login-successful-title: "ৰ" # Can be empty.
+    login-successful-subtitle: "" # Can be empty.
+    # Or if register-need-repeat-password set to false remove the "<repeat password>" part.
+    register: "{PRFX} Please, register using &6/register <password> <repeat password>"
+    register-different-passwords: "{PRFX} &cThe entered passwords differ from each other!"
+    register-password-too-short: "{PRFX} &cYou entered too short password, use a different one!"
+    register-password-too-long: "{PRFX} &cYou entered too long password, use a different one!"
+    register-password-unsafe: "{PRFX} &cYour password is unsafe, use a different one!"
+    register-successful: "{PRFX} &aSuccessfully registered!"
+    register-title: "{PRFX}" # Can be empty.
+    register-subtitle: "&aPlease, register using &6/register <password> <repeat password>" # Can be empty.
+    register-successful-title: "{PRFX}" # Can be empty.
+    register-successful-subtitle: "&aSuccessfully registered!" # Can be empty.
+    unregister-successful: "{PRFX}{NL}&aSuccessfully unregistered!"
+    unregister-usage: "{PRFX} Usage: &6/unregister <current password> confirm"
+    premium-successful: "{PRFX}{NL}&aSuccessfully changed account state to &6PREMIUM&a!"
+    already-premium: "{PRFX} &cYour account is already &6PREMIUM&c!"
+    not-premium: "{PRFX} &cYour account is not &6PREMIUM&c!"
+    premium-usage: "{PRFX} Usage: &6/premium <current password> confirm"
+    event-cancelled: "{PRFX} Authorization event was cancelled"
+    force-unregister-successful: "{PRFX} &6{0} &asuccessfully unregistered!"
+    force-unregister-kick: "{PRFX}{NL}&aYou have been unregistered by administrator!"
+    force-unregister-not-successful: "{PRFX} &cUnable to unregister &6{0}&c. Most likely this player has never been on this server."
+    force-unregister-usage: "{PRFX} Usage: &6/forceunregister <nickname>"
+    registrations-disabled-kick: "{PRFX} Registrations are currently disabled."
+    change-password-successful: "{PRFX} &aSuccessfully changed password!"
+    # Or if change-password-need-old-pass set to false remove the "<old password>" part.
+    change-password-usage: "{PRFX} Usage: &6/changepassword <old password> <new password>"
+    force-change-password-successful: "{PRFX} &aSuccessfully changed password for player &6{0}&a!"
+    force-change-password-message: "{PRFX} &aYour password has been changed to &6{0} &aby administator!"
+    force-change-password-not-successful: "{PRFX} &cUnable to change password for &6{0}&c. Most likely this player has never been on this server."
+    force-change-password-not-registered: "{PRFX} &cPlayer &6{0}&c is not registered."
+    force-change-password-usage: "{PRFX} Usage: &6/forcechangepassword <nickname> <new password>"
+    force-register-usage: "{PRFX} Usage: &6/forceregister <nickname> <password>"
+    force-register-incorrect-nickname: "{PRFX} &cNickname contains forbidden characters."
+    force-register-taken-nickname: "{PRFX} &cThis nickname is already taken."
+    force-register-successful: "{PRFX} &aSuccessfully registered player &6{0}&a!"
+    force-register-not-successful: "{PRFX} &cUnable to register player &6{0}&c."
+    totp: "{PRFX} Please, enter your 2FA key using &6/2fa <key>"
+    totp-title: "{PRFX}" # Can be empty.
+    totp-subtitle: "&aEnter your 2FA key using &6/2fa <key>" # Can be empty.
+    totp-successful: "{PRFX} &aSuccessfully enabled 2FA!"
+    totp-disabled: "{PRFX} &aSuccessfully disabled 2FA!"
+    # Or if totp-need-pass set to false remove the "<current password>" part.
+    totp-usage: "{PRFX} Usage: &6/2fa enable <current password>&f or &6/2fa disable <totp key>&f."
+    totp-wrong: "{PRFX} &cWrong 2FA key!"
+    totp-already-enabled: "{PRFX} &c2FA is already enabled. Disable it using &6/2fa disable <key>&c."
+    totp-qr: "{PRFX} Click here to open 2FA QR code in browser."
+    totp-token: "{PRFX} &aYour 2FA token &7(Click to copy)&a: &6{0}"
+    totp-recovery: "{PRFX} &aYour recovery codes &7(Click to copy)&a: &6{0}"
+    destroy-session-successful: "{PRFX} &eYour session is now destroyed, you'll need to log in again after reconnecting."
+    mod-session-expired: "{PRFX} Your session has expired, log in again."
+
+
